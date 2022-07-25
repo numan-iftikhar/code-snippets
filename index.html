@@ -19,16 +19,25 @@
   </head>
 
   <body class="font-sans">
-    <nav
-      class="flex justify-center items-center h-16 text-white text-2xl bg-blue-900"
-    >
-      <div>WebDev CheatSheet</div>
+    <nav class="flex items-center h-16 px-8 text-white bg-blue-900 fix">
+      <span class="font-serif font-bold tracking-wider text-2xl cursor-pointer"
+        ><a href="./index.html">Snippets</a></span
+      >
+
+      <ul class="flex ml-auto space-x-16">
+        <li><a href="#">C/C++</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#">Python</a></li>
+        <li><a href="#css">CSS</a></li>
+      </ul>
     </nav>
 
-    <div class="container w-2/3 m-auto font-medium text-white">
-      <div class="py-4 text-lg">
-        Center a div with flexbox
-        <pre class="lang-css rounded-lg p-0">
+    <section id="css" class="my-16">
+      <h2 class="text-center text-blue-700 text-4xl font-bold">CSS</h2>
+      <div class="container w-2/3 m-auto font-medium text-white">
+        <div class="py-4 text-lg">
+          Center a div with flexbox
+          <pre class="lang-css rounded-lg p-0">
           <code>
 div{
   display: flex;
@@ -38,11 +47,11 @@ div{
 }
           </code>
         </pre>
-      </div>
+        </div>
 
-      <div class="py-4 text-lg">
-        Center a div with grid
-        <pre class="lang-css rounded-lg">
+        <div class="py-4 text-lg">
+          Center a div with grid
+          <pre class="lang-css rounded-lg">
             <code>
 div{
   display: grid;
@@ -51,9 +60,24 @@ div{
 }
             </code>
           </pre>
+        </div>
       </div>
+    </section>
 
-    </div>
-
+    <section id="javascript" class="mb-16">
+      <h2 class="text-center text-blue-700 text-4xl font-bold">JavaScript</h2>
+      <div class="container w-2/3 m-auto font-medium text-white">
+        <div class="py-4 text-lg">
+          Reverse a string using array
+          <pre class="lang-js rounded-lg">
+            <code>
+function reverseStr(str){
+  return (str.split('').reverse().join(''));
+}
+            </code>
+         </pre>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
