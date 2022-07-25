@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="prism.js"></script>
-    <title>WebDev Cheatsheet</title>
+    <title>Code Snippets</title>
     <style>
       body {
         background: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%)
@@ -25,21 +25,35 @@
       <div>WebDev CheatSheet</div>
     </nav>
 
-    <div class="container w-2/3 m-auto font-medium">
+    <div class="container w-2/3 m-auto font-medium text-white">
       <div class="py-4 text-lg">
         Center a div with flexbox
-        <pre class="lang-css">
-            <code>
+        <pre class="lang-css rounded-lg p-0">
+          <code>
 div{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 500px; /* use desired height */
 }
+          </code>
+        </pre>
+      </div>
+
+      <div class="py-4 text-lg">
+        Center a div with grid
+        <pre class="lang-css rounded-lg">
+            <code>
+div{
+  display: grid;
+  place-items: center;
+  height: 500px; /* use desired height */
+}
             </code>
           </pre>
       </div>
- 
+
     </div>
+
   </body>
 </html>
